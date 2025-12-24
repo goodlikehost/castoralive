@@ -10,6 +10,10 @@ body
 {
 	
 	background-image: url("https://jumpybee.co.uk/wp-content/uploads/2025/11/Whisk_c7ecca2b4359d218c264cddfc5212251dr.jpeg");
+	  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 	color: #ffffff;
 }
 
@@ -473,4 +477,5 @@ input.invalid {
 	
 
 }
+
 
