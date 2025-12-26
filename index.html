@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SportStream Hub</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -13,12 +13,14 @@
 </header>
 
 <!-- TOP AD -->
-<section class="ad">Top Ad Space (728x90)</section>
+<section class="ad">
+  Top Ad Space (728x90)
+</section>
 
-<!-- PLAYER AREA -->
+<!-- PLAYER -->
 <section class="player-wrapper">
 
-  <!-- PLAYER TOP MENU -->
+  <!-- PLAYER MENU -->
   <div class="player-menu">
     <button onclick="openModal()">Sign Up</button>
     <button onclick="openModal()">Sign In</button>
@@ -26,39 +28,40 @@
 
   <!-- PLAYER THUMBNAIL -->
   <div class="player-thumb" onclick="openModal()">
-    <img src="https://via.placeholder.com/900x500?text=Live+Sports+Preview">
+    <img src="https://via.placeholder.com/900x500?text=Live+Sports+Preview" alt="Live Stream">
     <div class="play-btn">▶</div>
   </div>
 
 </section>
 
-<!-- POPULAR STREAMS -->
+<!-- POPULAR SPORTS -->
 <section class="popular">
   <h2>🔥 Popular Sports</h2>
+
   <div class="sports-grid">
 
     <div class="sport-card" onclick="openModal()">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/NFL_logo.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/NFL_logo.svg" alt="NFL">
       <span>NFL</span>
     </div>
 
     <div class="sport-card" onclick="openModal()">
-      <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_logo.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_logo.svg" alt="NBA">
       <span>NBA</span>
     </div>
 
     <div class="sport-card" onclick="openModal()">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/NHL_Logo.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/NHL_Logo.svg" alt="NHL">
       <span>NHL</span>
     </div>
 
     <div class="sport-card" onclick="openModal()">
-      <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/UEFA_Champions_League_logo.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/UEFA_Champions_League_logo.svg" alt="Soccer">
       <span>Soccer</span>
     </div>
 
     <div class="sport-card" onclick="openModal()">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Boxing_pictogram.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Boxing_pictogram.svg" alt="Boxing">
       <span>Boxing</span>
     </div>
 
@@ -66,27 +69,33 @@
 </section>
 
 <!-- BOTTOM AD -->
-<section class="ad">Bottom Ad Space (728x90)</section>
+<section class="ad">
+  Bottom Ad Space (728x90)
+</section>
 
-<!-- SIGNUP / SIGNIN MODAL -->
+<!-- AUTH MODAL -->
 <div id="authModal" class="modal">
   <div class="modal-content">
+
     <span class="close" onclick="closeModal()">×</span>
 
     <h2>🔒 Sign in to Watch Live</h2>
 
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
 
     <button class="primary-btn">Continue</button>
 
     <!-- MODAL AD -->
-    <div class="modal-ad">Ad Space 300x250</div>
+    <div class="modal-ad">
+      Ad Space 300x250
+    </div>
 
     <!-- AFFILIATE -->
     <a href="AFFILIATE_LINK" target="_blank" class="affiliate-btn">
       🎁 Get Premium Sports Deals
     </a>
+
   </div>
 </div>
 
