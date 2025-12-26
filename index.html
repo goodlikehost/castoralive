@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameStream Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🎮 GameStream</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#live">Live</a>
+    <a href="#deals">Deals</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Live Game Streaming + Best Gaming Deals</h1>
+  <p>Watch. Play. Earn.</p>
+</section>
+
+<!-- TOP AD -->
+<section class="ad ad-banner">
+  <!-- PASTE AD CODE HERE -->
+  <p>Ad Space 728x90</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <!-- MEDIA PLAYER -->
+  <section id="live" class="player">
+    <iframe
+      src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- SIDEBAR ADS -->
+  <aside class="sidebar">
+    <div class="ad">
+      <!-- AD CODE -->
+      <p>Ad Space 300x250</p>
+    </div>
+
+    <div class="ad">
+      <!-- AD CODE -->
+      <p>Ad Space 300x600</p>
+    </div>
+  </aside>
+
+</main>
+
+<!-- STREAM LIST -->
+<section class="streams">
+  <h2>🔥 Popular Streams</h2>
+  <div class="stream-grid">
+
+    <div class="stream-card">
+      <button onclick="changeStream('CHANNEL_ID')">Free Fire Live</button>
+    </div>
+
+    <div class="stream-card">
+      <button onclick="changeStream('CHANNEL_ID')">PUBG Live</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- AFFILIATE DEALS -->
+<section id="deals" class="deals">
+  <h2>💰 Gaming Deals</h2>
+  <div class="deal-grid">
+    <div class="deal-card">
+      <h3>Gaming Keyboard</h3>
+      <a href="AFFILIATE_LINK" class="btn" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Affiliate Disclosure • Ads Supported</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
