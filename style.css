@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
   background: #020617;
   color: white;
-  font-family: Arial, sans-serif;
   text-align: center;
 }
 
@@ -10,17 +16,35 @@ body {
 }
 
 .ad {
-  background: #111827;
-  margin: 20px auto;
-  padding: 15px;
   max-width: 728px;
+  margin: 20px auto;
+  background: #111827;
+  padding: 15px;
   border-radius: 8px;
 }
 
 /* PLAYER */
-.player-section {
+.player-wrapper {
   max-width: 900px;
   margin: 20px auto;
+  position: relative;
+}
+
+.player-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+.player-menu button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  background: #22c55e;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .player-thumb {
@@ -36,15 +60,15 @@ body {
 .play-btn {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
   background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
   border-radius: 10px;
 }
 
-/* POPULAR STREAMS */
+/* POPULAR */
 .popular {
   padding: 40px 20px;
 }
@@ -66,7 +90,6 @@ body {
 
 .sport-card img {
   height: 60px;
-  margin-bottom: 10px;
 }
 
 /* MODAL */
@@ -88,24 +111,18 @@ body {
 
 .close {
   position: absolute;
-  right: 15px;
   top: 10px;
+  right: 15px;
   cursor: pointer;
-  font-size: 24px;
 }
 
-.auth-tabs button {
-  margin: 10px;
-  padding: 8px 15px;
-}
-
-.auth-form input {
+.modal-content input {
   width: 100%;
   padding: 10px;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
-.auth-form button {
+.primary-btn {
   width: 100%;
   padding: 10px;
   background: #22c55e;
@@ -113,14 +130,10 @@ body {
   border-radius: 5px;
 }
 
-.hidden {
-  display: none;
-}
-
 .modal-ad {
-  background: #111827;
-  padding: 10px;
   margin: 15px 0;
+  padding: 10px;
+  background: #111827;
 }
 
 .affiliate-btn {
