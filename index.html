@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameStream Hub</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportStream Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-  <h2>🎮 GameStream Hub</h2>
+  <h2>🏆 SportStream</h2>
 </header>
 
 <!-- TOP AD -->
-<section class="ad">
-  <p>Top Ad Space (728x90)</p>
-</section>
+<section class="ad">Top Ad Space (728x90)</section>
 
-<!-- MEDIA PLAYER THUMBNAIL -->
-<section class="player-section">
+<!-- PLAYER AREA -->
+<section class="player-wrapper">
+
+  <!-- PLAYER TOP MENU -->
+  <div class="player-menu">
+    <button onclick="openModal()">Sign Up</button>
+    <button onclick="openModal()">Sign In</button>
+  </div>
+
+  <!-- PLAYER THUMBNAIL -->
   <div class="player-thumb" onclick="openModal()">
-    <img src="https://i.imgur.com/jVzfyog.jpeg" alt="Live Stream">
+    <img src="https://via.placeholder.com/900x500?text=Live+Sports+Preview">
     <div class="play-btn">▶</div>
   </div>
+
 </section>
 
 <!-- POPULAR STREAMS -->
 <section class="popular">
-  <h2>🔥 Popular Streams</h2>
-
+  <h2>🔥 Popular Sports</h2>
   <div class="sports-grid">
 
     <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/NFL_logo.svg">
       <span>NFL</span>
+    </div>
+
+    <div class="sport-card" onclick="openModal()">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_logo.svg">
+      <span>NBA</span>
     </div>
 
     <div class="sport-card" onclick="openModal()">
@@ -47,11 +58,6 @@
     </div>
 
     <div class="sport-card" onclick="openModal()">
-      <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_logo.svg">
-      <span>NBA</span>
-    </div>
-
-    <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Boxing_pictogram.svg">
       <span>Boxing</span>
     </div>
@@ -60,47 +66,27 @@
 </section>
 
 <!-- BOTTOM AD -->
-<section class="ad">
-  <p>Bottom Ad Space (728x90)</p>
-</section>
+<section class="ad">Bottom Ad Space (728x90)</section>
 
 <!-- SIGNUP / SIGNIN MODAL -->
-<div id="signupModal" class="modal">
+<div id="authModal" class="modal">
   <div class="modal-content">
-
     <span class="close" onclick="closeModal()">×</span>
 
-    <h2>🔐 Sign in to Watch</h2>
+    <h2>🔒 Sign in to Watch Live</h2>
 
-    <div class="auth-tabs">
-      <button onclick="showSignup()">Sign Up</button>
-      <button onclick="showSignin()">Sign In</button>
-    </div>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
 
-    <!-- SIGN UP -->
-    <form id="signupForm" class="auth-form">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <button type="submit">Create Account</button>
-    </form>
-
-    <!-- SIGN IN -->
-    <form id="signinForm" class="auth-form hidden">
-      <input type="email" placeholder="Email" required />
-      <input type="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
+    <button class="primary-btn">Continue</button>
 
     <!-- MODAL AD -->
-    <div class="modal-ad">
-      <p>Ad Space 300x250</p>
-    </div>
+    <div class="modal-ad">Ad Space 300x250</div>
 
     <!-- AFFILIATE -->
     <a href="AFFILIATE_LINK" target="_blank" class="affiliate-btn">
-      🎁 Unlock Premium Sports Deals
+      🎁 Get Premium Sports Deals
     </a>
-
   </div>
 </div>
 
