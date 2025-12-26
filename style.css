@@ -18,7 +18,7 @@ body {
 
 /* ADS */
 .ad {
-  max-width: 728px;
+  max-width: 350px;
   margin: 20px auto;
   background: #111827;
   padding: 15px;
@@ -52,13 +52,19 @@ body {
 .player-thumb {
   position: relative;
   cursor: pointer;
-}
-
-.player-thumb img {
-  width: 100%;
+  overflow: hidden;
   border-radius: 10px;
 }
 
+/* Make thumbnail and iframe fit */
+.player-thumb img,
+.player-thumb iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay Play button */
 .play-btn {
   position: absolute;
   inset: 0;
