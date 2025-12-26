@@ -14,7 +14,7 @@
 
 <!-- TOP AD -->
 <section class="ad">
-  Top Ad Space (728x90)
+  Top Ad Space (350px)
 </section>
 
 <!-- PLAYER -->
@@ -26,9 +26,13 @@
     <button onclick="openModal()">Sign In</button>
   </div>
 
-  <!-- PLAYER THUMBNAIL -->
+  <!-- PLAYER THUMBNAIL WITH PLACEHOLDER VIDEO -->
   <div class="player-thumb" onclick="openModal()">
-    <img src="https://via.placeholder.com/900x500?text=Live+Sports+Preview" alt="Live Stream">
+    <img src="https://via.placeholder.com/900x500?text=Your+Thumbnail+Here" alt="Live Stream Thumbnail">
+    <iframe id="placeholderVideo" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&showinfo=0&rel=0" 
+            frameborder="0" allowfullscreen>
+    </iframe>
     <div class="play-btn">▶</div>
   </div>
 
@@ -39,44 +43,37 @@
   <h2>🔥 Popular Sports</h2>
 
   <div class="sports-grid">
-
     <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/NFL_logo.svg" alt="NFL">
       <span>NFL</span>
     </div>
-
     <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_logo.svg" alt="NBA">
       <span>NBA</span>
     </div>
-
     <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/NHL_Logo.svg" alt="NHL">
       <span>NHL</span>
     </div>
-
     <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/UEFA_Champions_League_logo.svg" alt="Soccer">
       <span>Soccer</span>
     </div>
-
     <div class="sport-card" onclick="openModal()">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Boxing_pictogram.svg" alt="Boxing">
       <span>Boxing</span>
     </div>
-
   </div>
 </section>
 
 <!-- BOTTOM AD -->
 <section class="ad">
-  Bottom Ad Space (728x90)
+  Bottom Ad Space (350px)
 </section>
 
 <!-- AUTH MODAL -->
 <div id="authModal" class="modal">
   <div class="modal-content">
-
     <span class="close" onclick="closeModal()">×</span>
 
     <h2>🔒 Sign in to Watch Live</h2>
@@ -95,7 +92,6 @@
     <a href="AFFILIATE_LINK" target="_blank" class="affiliate-btn">
       🎁 Get Premium Sports Deals
     </a>
-
   </div>
 </div>
 
