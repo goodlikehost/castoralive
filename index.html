@@ -9,82 +9,61 @@
 <body>
 
 <header class="header">
-  <div class="logo">🎮 GameStream</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#live">Live</a>
-    <a href="#deals">Deals</a>
-  </nav>
+  <h2>🎮 GameStream Hub</h2>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Live Game Streaming + Best Gaming Deals</h1>
-  <p>Watch. Play. Earn.</p>
-</section>
-
 <!-- TOP AD -->
-<section class="ad ad-banner">
-  <!-- PASTE AD CODE HERE -->
-  <p>Ad Space 728x90</p>
+<section class="ad">
+  <!-- AD CODE HERE -->
+  <p>Top Ad Space (728x90)</p>
 </section>
 
-<!-- MAIN CONTENT -->
-<main class="main">
+<!-- MEDIA PLAYER -->
+<section class="player-section">
+  <div class="player-overlay" onclick="openModal()">
+    ▶ Play Stream
+  </div>
 
-  <!-- MEDIA PLAYER -->
-  <section id="live" class="player">
-    <iframe
-      src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"
-      allowfullscreen>
-    </iframe>
-  </section>
+  <iframe
+    id="streamPlayer"
+    src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"
+    allowfullscreen>
+  </iframe>
+</section>
 
-  <!-- SIDEBAR ADS -->
-  <aside class="sidebar">
-    <div class="ad">
-      <!-- AD CODE -->
+<!-- BOTTOM AD -->
+<section class="ad">
+  <!-- AD CODE HERE -->
+  <p>Bottom Ad Space (728x90)</p>
+</section>
+
+<!-- SIGNUP MODAL -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2>🔐 Sign Up to Watch Live</h2>
+
+    <form class="signup-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <button type="submit">Create Free Account</button>
+    </form>
+
+    <!-- MODAL AD -->
+    <div class="modal-ad">
+      <!-- AD CODE HERE -->
       <p>Ad Space 300x250</p>
     </div>
 
-    <div class="ad">
-      <!-- AD CODE -->
-      <p>Ad Space 300x600</p>
-    </div>
-  </aside>
-
-</main>
-
-<!-- STREAM LIST -->
-<section class="streams">
-  <h2>🔥 Popular Streams</h2>
-  <div class="stream-grid">
-
-    <div class="stream-card">
-      <button onclick="changeStream('CHANNEL_ID')">Free Fire Live</button>
-    </div>
-
-    <div class="stream-card">
-      <button onclick="changeStream('CHANNEL_ID')">PUBG Live</button>
-    </div>
+    <!-- AFFILIATE BUTTON -->
+    <a href="AFFILIATE_LINK" target="_blank" class="affiliate-btn">
+      🎁 Get Gaming Deal
+    </a>
 
   </div>
-</section>
-
-<!-- AFFILIATE DEALS -->
-<section id="deals" class="deals">
-  <h2>💰 Gaming Deals</h2>
-  <div class="deal-grid">
-    <div class="deal-card">
-      <h3>Gaming Keyboard</h3>
-      <a href="AFFILIATE_LINK" class="btn" target="_blank">Buy Now</a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>Affiliate Disclosure • Ads Supported</p>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
